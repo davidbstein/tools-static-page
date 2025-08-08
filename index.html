@@ -7,8 +7,10 @@
     if stein has a demo live, this page will redirect you.
     </h1>
     <script>
-      const resp = await fetch("https://script.google.com/macros/s/AKfycbyMGs6EkcLuZ7EdAQtxN14WBnxZYvZJSgLFEhKHO_NP3TNH6u47MroqjyJqaok61DMA/exec");
-      window.location = resp.url;
+      (async function(){
+        const resp = await fetch("https://script.google.com/macros/s/AKfycbyMGs6EkcLuZ7EdAQtxN14WBnxZYvZJSgLFEhKHO_NP3TNH6u47MroqjyJqaok61DMA/exec");
+        window.location = resp.url;
+      })();
     </script>
     </h1>
   </body>
